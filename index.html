@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Micet Wallet - A safe test wallet for developers. Keep your test keys separate from main keys.">
+    <meta name="keywords" content="crypto wallet, test wallet, developer wallet, blockchain, web3">
+    <title>Micet Wallet - Safe Test Wallet for Developers</title>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== NAVIGATION ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo -->
+            <a href="#" class="nav-logo">
+                <img src="logo.png" alt="Micet Wallet Logo" class="logo-img">
+                <span class="logo-text">Micet</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="https://github.com/YASH514131/Micet-Dev-wallet" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav" id="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#download">Download</a></li>
+                <li><a href="https://github.com/YASH514131/Micet-Dev-wallet" target="_blank" rel="noopener">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    A Safe Test Wallet<br>
+                    <span class="gradient-text">for Developers</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Micet Wallet keeps your test keys completely separate from your main keys. 
+                    Build, test, and experiment with confidence — without risking your real assets.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7,10 12,15 17,10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download
+                    </a>
+                    <a href="https://github.com/YASH514131/Micet-Dev-wallet" target="_blank" rel="noopener" class="btn btn-secondary">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <!-- Wallet Mockup Placeholder -->
+                <div class="wallet-mockup">
+                    <div class="mockup-header">
+                        <img src="logo.png" alt="Micet" class="mockup-logo">
+                        <span>Micet Wallet</span>
+                    </div>
+                    <div class="mockup-balance">
+                        <span class="balance-label">Test Balance</span>
+                        <span class="balance-value">10.5 ETH</span>
+                        <span class="balance-usd">$0.00 (Testnet)</span>
+                    </div>
+                    <div class="mockup-actions">
+                        <div class="action-btn">Send</div>
+                        <div class="action-btn">Receive</div>
+                        <div class="action-btn">Swap</div>
+                    </div>
+                    <div class="mockup-tokens">
+                        <div class="token-item">
+                            <div class="token-icon">Ξ</div>
+                            <div class="token-info">
+                                <span class="token-name">Ethereum</span>
+                                <span class="token-network">Sepolia</span>
+                            </div>
+                            <span class="token-amount">10.5 ETH</span>
+                        </div>
+                        <div class="token-item">
+                            <div class="token-icon">◈</div>
+                            <div class="token-info">
+                                <span class="token-name">USDC</span>
+                                <span class="token-network">Goerli</span>
+                            </div>
+                            <span class="token-amount">1,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background Gradient Orbs -->
+        <div class="hero-bg-orb orb-1"></div>
+        <div class="hero-bg-orb orb-2"></div>
+    </section>
+
+    <!-- ========== FEATURES SECTION ========== -->
+    <section class="features" id="features">
+        <div class="features-container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose Micet?</h2>
+                <p class="section-subtitle">Built by developers, for developers. Simple, secure, and focused on what matters.</p>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1: Safe Key Separation -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                            <circle cx="12" cy="16" r="1"></circle>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Safe Key Separation</h3>
+                    <p class="feature-description">
+                        Keep your test and development keys completely isolated from your main wallet. Never mix testnet and mainnet again.
+                    </p>
+                </div>
+                
+                <!-- Feature 2: Developer Friendly -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Developer Friendly</h3>
+                    <p class="feature-description">
+                        Designed with developers in mind. Easy integration, clear APIs, and built-in support for all major testnets.
+                    </p>
+                </div>
+                
+                <!-- Feature 3: Open Source -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                            <path d="M2 17l10 5 10-5"></path>
+                            <path d="M2 12l10 5 10-5"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Open Source</h3>
+                    <p class="feature-description">
+                        Fully open source and transparent. Audit the code, contribute features, or fork it for your own needs.
+                    </p>
+                </div>
+                
+                <!-- Feature 4: Lightweight -->
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Lightweight</h3>
+                    <p class="feature-description">
+                        Fast and minimal. No bloat, no unnecessary features. Just what you need for testing and development.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DOWNLOAD SECTION ========== -->
+    <section class="download" id="download">
+        <div class="download-container">
+            <div class="download-content">
+                <h2 class="download-title">Ready to Get Started?</h2>
+                <p class="download-subtitle">
+                    Download Micet Wallet today and start building with confidence.
+                </p>
+                <div class="download-buttons">
+                    <a href="https://addons.mozilla.org/en-US/firefox/addon/micet/" target="_blank" rel="noopener" class="btn btn-primary btn-large">
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 9.29c-.018.083-.053.16-.106.229-.053.07-.12.127-.197.169-.077.042-.162.067-.25.074-.087.007-.175-.003-.259-.03-.084-.026-.162-.069-.23-.126-.068-.057-.125-.128-.167-.208-.042-.08-.068-.168-.076-.258-.008-.09.002-.18.03-.266.205-.64.302-1.313.287-1.988-.016-.675-.143-1.343-.377-1.975-.234-.632-.573-1.22-1.002-1.738-.43-.518-.943-.96-1.518-1.306-.575-.347-1.205-.594-1.865-.731-.66-.137-1.342-.163-2.013-.077-.671.086-1.323.284-1.928.585-.605.3-1.155.7-1.627 1.18-.472.48-.862 1.036-1.15 1.645-.29.61-.476 1.266-.55 1.94-.074.674-.036 1.358.112 2.02.148.663.408 1.297.766 1.872.358.575.81 1.084 1.337 1.503.527.42 1.122.745 1.757.96.635.214 1.304.315 1.977.298.673-.017 1.338-.152 1.965-.398.627-.246 1.208-.6 1.716-1.046.508-.447.936-.98 1.264-1.577.328-.596.552-1.247.662-1.923.11-.676.105-1.37-.016-2.044z"/>
+                        </svg>
+                        Download for Firefox
+                    </a>
+                </div>
+                <p class="download-note">
+                    Currently available for Firefox. More browsers coming soon.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Background Elements -->
+        <div class="download-bg-orb orb-3"></div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.png" alt="Micet Wallet" class="footer-logo">
+                    <span class="footer-name">Micet Wallet</span>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/YASH514131/Micet-Dev-wallet" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://github.com/YASH514131/Micet-Dev-wallet/blob/main/LICENSE" target="_blank" rel="noopener">License</a>
+                    <a href="https://addons.mozilla.org/en-US/firefox/addon/micet/" target="_blank" rel="noopener">Firefox Add-on</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Micet Wallet. Open source under MIT License.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
